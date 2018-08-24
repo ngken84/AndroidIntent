@@ -4,15 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Main2Activity">
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:id="@+id/mainActivityButton"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"/>
+        android:text="HELLO ACTIVITY2" />
 
 </LinearLayout>
