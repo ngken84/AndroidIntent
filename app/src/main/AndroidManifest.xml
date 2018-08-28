@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".BundleActivityExample"
+            android:label="@string/title_activity_bundle_example"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

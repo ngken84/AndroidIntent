@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
+    private Button bundleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +25,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        bundleButton = findViewById(R.id.bundleActivityButton);
+        bundleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), BundleActivityExample.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("message", "This string is from a bundle");
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
     }
 }
